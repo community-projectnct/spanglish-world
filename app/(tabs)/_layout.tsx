@@ -14,6 +14,7 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
       }}>
+      {/* Home Tab */}
       <Tabs.Screen
         name="index"
         options={{
@@ -23,12 +24,47 @@ export default function TabLayout() {
           ),
         }}
       />
+      
+      {/* H.E.R. Tab */}
+      <Tabs.Screen
+        name="her"
+        options={{
+          title: 'H.E.R.',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'heart' : 'heart-outline'} color={color} />
+          ),
+        }}
+      />
+
+      {/* Sports Tab */}
+      <Tabs.Screen
+        name="sports"
+        options={{
+          title: 'Sports',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'football' : 'football-outline'} color={color} />
+          ),
+        }}
+      />
+
+      {/* La Portada Tab */}
+      <Tabs.Screen
+        name="laPortada"
+        options={{
+          title: 'La Portada',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'newspaper' : 'newspaper-outline'} color={color} />
+          ),
+        }}
+      />
+
+      {/* Explore Tab */}
       <Tabs.Screen
         name="explore"
         options={{
           title: 'Explore',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'search' : 'search-outline'} color={color} />
           ),
         }}
       />

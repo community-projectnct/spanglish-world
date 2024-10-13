@@ -29,6 +29,15 @@ export default function HomeScreen() {
           </ThemedText>{' '}
           to open developer tools.
         </ThemedText>
+        <ThemedText type="title">Welcome!Welcome!Welcome!Welcome!Welcome!Welcome!Welcome!
+        Welcome!Welcome!Welcome!Welcome! Welcome!
+        Welcome! Welcome!
+        Welcome! Welcome!
+        Welcome! Welcome!
+        </ThemedText>
+        <ThemedText>
+          This app is just for fun 
+        </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 2: Explore</ThemedText>
